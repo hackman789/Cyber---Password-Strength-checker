@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Strength Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Password Strength Checker</h2>
+
+        <!-- Password Input -->
+        <input type="password" id="passwordInput" placeholder="Enter password">
+        <button id="togglePassword">👁</button>
+
+        <!-- Password Strength Bar -->
+        <div class="strength-meter" id="strengthMeter"></div>
+        <p id="strengthText"></p>
+
+        <!-- Password Tips -->
+        <div id="tips">
+            <h3>Password Tips</h3>
+            <ul>
+                <li>Use at least 12+ characters</li>
+                <li>Include uppercase, lowercase, numbers, and symbols</li>
+                <li>Avoid common words or patterns</li>
+                <li>Use a passphrase for better security</li>
+            </ul>
+        </div>
+
+        <!-- Generate Strong Password -->
+        <button id="generatePassword">Generate Strong Password</button>
+        <input type="text" id="generatedPassword" readonly>
+        <button id="copyPassword">Copy</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
